@@ -1,8 +1,13 @@
 from django.shortcuts import render
 # Create your views here.
-def demo(request):
-    context={
-        "class_name":"Django class",
-        "date" : "2023-05-11"
-    }
-    return render (request,'demo.html',context)
+def employee_index(request):
+    return render (request,'employees/index_employee.html')
+
+def employee_add(request):
+    return render(request, 'employees/add_employee.html')
+
+def employee_edit(request):
+    return render(request, 'employees/edit_employee.html')
+
+def employee_show(request):
+    return render(request, 'employees/show_employee.html')
