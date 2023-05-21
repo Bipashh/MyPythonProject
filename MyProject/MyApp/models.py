@@ -9,7 +9,7 @@ class Department(models.Model):
     class Meta:
         db_table = "app_department"
         
-class Employee(models.Model):
+class  Employee(models.Model):
     full_name = models.CharField(max_length=255)
     contact = models.CharField(max_length=255)
     email = models.EmailField()
